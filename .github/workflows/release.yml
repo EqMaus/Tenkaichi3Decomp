@@ -34,6 +34,9 @@ jobs:
       - name: Prepare Input Viewer
         run: python3 prepare_input_viewer.py
 
+      - name: Fix Input Viewer
+        run: python3 fix_input_viewer.py
+
 
       # The build container (port/release/Dockerfile): Ubuntu 22.04, clang/LLVM 22, SDL3 from source, mingw-w64.
       # Its layers are cached between runs, so only the first run pays for building it.
