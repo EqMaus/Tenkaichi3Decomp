@@ -1668,7 +1668,7 @@ void BtlMove_UpdateDefenseTimers(BtlMoveChr *chr) {
     if (chr->unk1070 < -30) {
         chr->unk1070 = -30;
         if (BtlInput_TestAction(chr, 0x26, 1)) {
-            chr->unk1070 = 1;
+            chr->unk1070 = 4;
         }
     } else {
         if (BtlInput_TestAction(chr, 0x26, 1)) {
