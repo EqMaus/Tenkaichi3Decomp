@@ -28,6 +28,9 @@ jobs:
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
+      - name: Prepare MAUS LAB source
+        run: python3 prepare_zcounter_lab.py
+
 
       # The build container (port/release/Dockerfile): Ubuntu 22.04, clang/LLVM 22, SDL3 from source, mingw-w64.
       # Its layers are cached between runs, so only the first run pays for building it.
