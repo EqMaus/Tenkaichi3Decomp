@@ -990,7 +990,7 @@ s32 BtlInput_TestAction(BtlInputChr *chr, s32 id, s32 want) {
         result = BtlInput_IsCmdHeld(chr, BTLC_GUARD_H) && BtlInput_IsHeld(chr, BTLB_DOWN);
         break;
     case 38:
-        result = BtlInput_IsPressed(chr, BTLB_UP) && BtlInput_IsPressed(chr, BTLB_RUSH);
+        result = BtlInput_IsPressed(chr, BTLB_UP);
         break;
     case 40:
         result = BtlInput_IsHeld(chr, BTLB_DOWN);
